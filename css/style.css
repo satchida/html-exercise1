@@ -2,16 +2,6 @@ li{
     display:inline;
     float: left;
 }
-.nav{
-    left:0;
-    top:0;
-    margin: 0;
-    padding: 0;
-    background-color: #342;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-  }
   header{
     display: block;
   }
@@ -87,7 +77,7 @@ color: purple;
 }
 
 li a:hover {
-    background-color: rgb(150,150,150);
+    background-color: rgb(80,80,80);
   }
   .notice{
     text-align: left;
@@ -102,3 +92,49 @@ li a:hover {
 }
 
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+ul ul{
+  display: none;
+}
+ul li{
+  display: block;
+}
+ul li:hover > ul{
+  display: block;
+  background-color: green; 
+}
+ul ul li{
+  clear: both;
+}
+#header-fix-space { height:0px; }
+
+#fixed-header {
+    background-color: #999999;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1500;
+    }
